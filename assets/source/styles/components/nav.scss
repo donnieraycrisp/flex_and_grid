@@ -1,0 +1,30 @@
+#nav {
+  border-top: 1px dashed var(--clr-font-tinted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--clr-grey-dark);
+}
+
+.navItem {
+  border: 1px solid var(--clr-font-tinted);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: var(--clr-font-tinted);
+  text-decoration: none;
+  transition: 0.2s ease-in-out all;
+
+  &--active {
+    color: var(--clr-green);
+    border-color: var(--clr-green);
+    pointer-events: none;
+  }
+
+  &:hover {
+    border-color: var(--clr-font);
+    color: var(--clr-font);
+    opacity: 1;
+  }
+}

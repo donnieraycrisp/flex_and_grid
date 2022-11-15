@@ -1,0 +1,17 @@
+.flexContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.flexItem {
+  flex: 1 1 20%;
+  border: 1px solid var(--clr-purple);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  counter-increment: box-number;
+
+  // &::before {
+  //   content: counter(box-number) ". ";
+  //   opacity: 0.4;
+  // }
+}
